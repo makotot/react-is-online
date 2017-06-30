@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@import-normalize;
+
+body {
+  margin: 0;
+  color: #495057;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+}
+
+.o-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10vw;
+  padding: 0 0 20vh;
+  max-width: 80vw;
+  height: 80vh;
+}
+
+.c-main {
+  text-align: center;
+
+  &__item + &__item {
+    margin: 20px 0 0;
+  }
+}
+
+.c-headline {
+  display: inline-table;
+  padding: 4px;
+  color: #20c997;
+  font-size: 2.4em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+
+.c-version {
+  display: inline-table;
+  color: #868e96;
+  font-size: 1em;
+}
+
+.c-description {
+}
+
+.c-install {
+  display: block;
+  padding: 1em;
+  background-color: #e9ecef;
+  color: #20c997;
+}
+
+.c-network {
+  font-size: 2.4em;
+  color: #20c997;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #0ca678;
+  }
+
+  &--off {
+    color: #dee2e6;
+  }
+
+  &--off:hover {
+    color: #adb5bd;
+  }
+}
+
+.c-reconnect {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  padding: 1em;
+  width: 100vw;
+  background-color: #ffec99;
+  transform: translate(0, 100%);
+  transition: transform 0.2s ease;
+
+  &--off {
+    transform: translate(0, 0);
+  }
+
+  &__link {
+    color: #343a40;
+  }
+}
+
+.c-github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #343a40;
+
+  &__inner {
+    margin-right: 0.2em;
+  }
+}

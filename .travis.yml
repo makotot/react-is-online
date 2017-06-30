@@ -1,0 +1,19 @@
+language: node_js
+env:
+  global:
+  - GH_REPO="makotot/react-is-online"
+  - GIT_COMMITTER_NAME=makotot
+  - GIT_COMMITTER_EMAIL=makoto.ttn@gmail.com
+  - GIT_AUTHOR_NAME=makotot
+  - GIT_AUTHOR_EMAIL=makoto.ttn@gmail.com
+node_js:
+- '6'
+- '7'
+- '8'
+script: yarn run test
+after_success:
+- test ${TRAVIS_TAG} && yarn run build
+cache:
+  yarn: true
+  directories:
+    - node_modules

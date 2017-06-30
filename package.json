@@ -1,0 +1,86 @@
+{
+  "name": "react-is-online",
+  "version": "0.0.1",
+  "description": "react higher order component to detect the network goes to offline or not.",
+  "main": "./lib/index.js",
+  "author": "makotot",
+  "license": "MIT",
+  "scripts": {
+    "serve": "NODE_ENV=development webpack-dev-server --inline --hot --color",
+    "debug": "NODE_ENV=development webpack --display-error-details",
+    "test": "NODE_ENV=test ./node_modules/.bin/ava __test__/*.js --verbose",
+    "docs": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production ./node_modules/.bin/babel ./src/js/lib --out-dir ./lib",
+    "prepublish": "yarn run build"
+  },
+  "files": [
+    "README.md",
+    "lib/index.js",
+    "lib/request.js",
+    "package.json",
+    "webpack.config.babel.js",
+    ".eslintrc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makotot/react-is-online.git"
+  },
+  "browserslist": "last 2 versions",
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": {
+      "babelrc": true
+    }
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "ava": "^0.20.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-env": "^3.0.2",
+    "css-loader": "^0.28.4",
+    "cssnano": "^3.10.0",
+    "enzyme": "^2.9.1",
+    "eslint": "3.19.0",
+    "eslint-loader": "^1.8.0",
+    "eslint-plugin-react": "^7.1.0",
+    "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "postcss-normalize": "^4.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-icons": "^2.2.5",
+    "react-test-renderer": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "peerDependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "prop-types": "^15.5.10"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "hoc",
+    "higher order component",
+    "offline"
+  ]
+}
