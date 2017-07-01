@@ -4,7 +4,9 @@ import HtmlWebpackPlguin from 'html-webpack-plugin'
 
 export default {
   entry: {
-    app: [
+    app: process.env.NODE_ENV === 'production' ? [
+      './src/js/app.js',
+    ] : [
       'webpack-dev-server/client?http://localhost:8080',
       './src/js/app.js',
     ],
