@@ -39,8 +39,8 @@ const IsOnlineComponent = IsOnline(({ ...props }) => {
 | ----- | ----- | ------- |
 | `isOnline` | Boolean | Boolean value the network is online or not. |
 | `reconnect` | Function | Method trying to connect to the network. |
-| `isMonitoring` | Boolean | |
-| `isReconnecting` | Boolean | |
+| `isMonitoring` | Boolean | Monitoring the network connection status. |
+| `isReconnecting` | Boolean | Reconnecting. |
 
 ## License
 
