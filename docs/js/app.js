@@ -25373,7 +25373,7 @@ module.exports = function(exec, skipClosing){
 
 module.exports = {
 	"name": "react-is-online",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "react higher order component to detect the network goes to offline or not.",
 	"main": "./lib/index.js",
 	"author": "makotot",
